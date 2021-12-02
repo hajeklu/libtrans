@@ -5,7 +5,7 @@ export const photos = [
         height: 3
     },
     {
-        src: "assets/IMG_20191027_184402.jpg",
+        src: "assets/IMG_20191027_184402~2.jpg",
         width: 16,
         height: 9
     },
