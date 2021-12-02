@@ -21,7 +21,7 @@ export default function GallerySection() {
 
     return (
     <Container style={{
-        backgroundImage: `linear-gradient(to right, #00000050, #00000050), url('assets/IMG_0798.jpeg')`
+        backgroundImage: `linear-gradient(to right, #00000050, #00000050), url('assets/IMG_2814_FILTER.JPEG')`
       }}  className='tm-section-gallery tm-welcome' fluid>
     <Col className='text-center tm-gallery-title-wrap'>
           <h2 className='tm-site-title'>Galerie</h2>
