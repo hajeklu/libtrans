@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 export default function WelcomeSection({offsetY}) {
   return (
     <Container style={{
-      backgroundImage: `url('assets/main.jpg')`
+      backgroundImage: `url('assets/IMG_0798.jpeg')`
     }} className='tm-section-welcome tm-welcome' fluid>
       <Row>
         <Col className='text-center tm-site-title-wrap'>
