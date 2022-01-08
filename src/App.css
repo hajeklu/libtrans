@@ -120,11 +120,12 @@ a:focus {
 }
 
 .tm-textbox-full-height {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0px 50vw;
   padding-top: 10vh;
   padding-bottom: 10vh;
   border: 2px solid var(--border-color);
+  overflow-y: hidden;
 }
 
 .tm-btn,
