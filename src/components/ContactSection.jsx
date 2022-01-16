@@ -12,10 +12,10 @@ export default function ContactSection({offsetY}) {
           <div className='tm-textbox tm-textbox-full-height tm-white-bg'>
             <h2 className='tm-green-text tm-section-title'>Kontaktujte nás</h2>
             <Row>
-              <Col sm>
+              <Col sm style={{transform: `translateY(${-offsetY*0.05}px)`}}>
                 <h3>Adresa: </h3>
               </Col>
-              <Col sm>
+              <Col sm style={{transform: `translateY(${-offsetY*0.04}px)`}}>
                 <address>
                 <p>
                   LibTrans Express s.r.o.<br></br>
@@ -24,12 +24,12 @@ export default function ContactSection({offsetY}) {
                 </p>
                 </address>
               </Col>
-              <Col sm>
+              <Col sm style={{transform: `translateY(${-offsetY*0.05}px)`}}>
                 <h3>Mobil: </h3>
               </Col>
             </Row>
             <Row>
-              <Col sm>
+              <Col sm style={{transform: `translateY(${-offsetY*0.05}px)`}}>
                 <p>
                   Luboš Hájek:<br></br>
                   <a href='tel:+420602129636'>+420 602 129 636</a>
@@ -48,10 +48,10 @@ export default function ContactSection({offsetY}) {
               </Col>
             </Row>
             <Row>
-              <Col sm>
+              <Col sm style={{transform: `translateY(${-offsetY*0.04}px)`}}>
                 <h3>Email: </h3>
               </Col>
-              <Col sm>
+              <Col sm style={{transform: `translateY(${-offsetY*0.05}px)`}}>
                 <p>
                   <a href='mailto:info@libtrans-express.cz'>
                     info@libtrans-express.cz
@@ -69,14 +69,14 @@ export default function ContactSection({offsetY}) {
               </Col>
             </Row>
             <Row>
-              <Col sm>
+              <Col sm style={{transform: `translateY(${-offsetY*0.04}px)`}}>
                 <h3>Identifikace: </h3>
               </Col>
-              <Col sm>
+              <Col sm style={{transform: `translateY(${-offsetY*0.05}px)`}}>
                 IČO:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 08175039
               </Col>
-              <Col sm>
+              <Col sm style={{transform: `translateY(${-offsetY*0.04}px)`}}>
                 DIČ:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 CZ08175039
               </Col>

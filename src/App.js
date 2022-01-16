@@ -16,8 +16,8 @@ function App() {
   return (
     <div>
       <WelcomeSection offsetY={offsetY} />
-      <ContactSection offsetY={offsetY} />
-      <GallerySection />
+      <ContactSection offsetY={offsetY - window.innerHeight} />
+      <GallerySection offsetY={offsetY - 2 * window.innerHeight} />
     </div>
   );
 }

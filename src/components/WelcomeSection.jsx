@@ -14,8 +14,8 @@ export default function WelcomeSection({offsetY}) {
       <Row>
         <Col>
           <div style={{transform: `translateY(${-offsetY*0.05}px)`}} className='tm-textbox tm-white-bg'>
-            <h2 className='tm-green-text tm-section-title'>Vítejte!</h2>
-            <p>
+            <h2 style={{transform: `translateY(${-offsetY*0.05}px)`}} className='tm-green-text tm-section-title'>Vítejte!</h2>
+            <p style={{transform: `translateY(${-offsetY*0.05}px)`}}>
               Firma LibTrans Express s.r.o. se zabývá mezinárodní kamionovou
               dopravou již řadu let.
             </p>

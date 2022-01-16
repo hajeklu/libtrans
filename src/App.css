@@ -100,7 +100,7 @@ a:focus {
   font-size: 3rem;
   padding: 30px 100px;
   background: var(--fill-color);
-  width: 59vw;
+  width: 59%;
 }
 
 .tm-textbox {

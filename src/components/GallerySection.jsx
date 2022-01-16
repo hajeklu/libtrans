@@ -4,11 +4,11 @@ import Gallery from 'react-photo-gallery';
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from '../data/photos';
 
-export default function GallerySection() {
+export default function GallerySection({offsetY}) {
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
   
-    const openLightbox = useCallback((event, { photo, index }) => {
+    const openLightbox = useCallback((event, { index }) => {
       setCurrentImage(index);
       setViewerIsOpen(true);
     }, []);
@@ -24,9 +24,9 @@ export default function GallerySection() {
         backgroundImage: `linear-gradient(to right, #00000050, #00000050), url('assets/main.jpg')`
       }}  className='tm-section-gallery tm-welcome' fluid>
     <Col className='text-center tm-gallery-title-wrap'>
-          <h2 className='tm-site-title'>Galerie</h2>
+          <h2 style={{transform: `translateY(${offsetY*0.05}px)`}}  className='tm-site-title'>Galerie</h2>
         </Col>
-   <div className='tm-gallery'>
+   <div style={{transform: `translateY(${-offsetY*0.05}px)`}}  className='tm-gallery'>
       <Gallery photos={photos} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (
