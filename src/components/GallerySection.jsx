@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import { Col, Container } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Gallery from 'react-photo-gallery';
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from '../data/photos';
@@ -43,6 +43,58 @@ export default function GallerySection({offsetY}) {
         ) : null}
       </ModalGateway>
     </div>
+
+    <Container style={{
+      backgroundColor: 'rgba(0, 0, 0, 0.63)',
+      margin: '0',
+      marginTop: '60px',
+      paddingTop: '50px',
+      paddingLeft: '50px',
+      paddingRight: '50px',
+      paddingBottom: '15px',
+      borderTop: '2px solid #e69d65cc',
+    }} fluid>
+      <Row style={{
+        borderBottom: '2px solid #e69d65',
+      }}>
+        <Row style={{
+          display: 'flex',
+          flexWrap: 'wrap'
+        }}>
+          <div style={{
+            flexGrow: '1',
+            flexBasis: '50%',
+            textAlign: 'center',
+          }}>
+                <p>
+                  <a href='tel:+420725776260'> +420 725 776 260</a>
+                </p>
+                <p>
+                  <a href='mailto:hajeklu@outlook.com'> hajeklu@outlook.com</a>
+                </p>
+        </div>
+          <div style={{
+            flexGrow: '1',
+            flexBasis: '50%',
+            textAlign: 'center',
+          }}>
+          <address >
+                <p>
+                  LibTrans Express s.r.o.<br></br>
+                  Krásný Les 254<br></br>
+                  08175039
+                </p>
+                </address>
+          </div>
+        </Row>
+      </Row>
+      <Row>
+        <p style={{
+          textAlign: 'right',
+          fontSize: '18px'
+        }}>LibTrans Express s.r.o. | 2019 - 2022</p>
+      </Row>
+    </Container>
     </Container>
   );
 }
