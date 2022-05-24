@@ -52,16 +52,16 @@ export default function ContactSection({offsetY}) {
               </Col>
               <Col sm style={{transform: `translateY(${-offsetY*0.05}px)`}}>
                 <p>
-                  <a href='mailto:info@libtrans-express.cz'>
-                    info@libtrans-express.cz
+                  <a href='mailto:info@libtrans.cz'>
+                    info@libtrans.cz
                   </a>
                   <br></br>
-                  <a href='mailto:info@libtrans-express.cz'>
-                    ucetni@libtrans-express.cz
+                  <a href='mailto:info@libtrans.cz'>
+                    ucetni@libtrans.cz
                   </a>
                   <br></br>
-                  <a href='mailto:info@libtrans-express.cz'>
-                    lubos.hajek@libtrans-express.cz
+                  <a href='mailto:info@libtrans.cz'>
+                    lubos.hajek@libtrans.cz
                   </a>
                   <br></br>
                 </p>
